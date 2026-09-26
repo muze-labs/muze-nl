@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en" class="ds-darkmode-auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Muze — a solid company. We build for the web, Solid and what comes next.">
+  <title>Muze — a solid company</title>
+  <link rel="stylesheet" href="the-ds.css"><link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <header class="muze-site-header ds-sticky-top">
+    <div class="muze-header-inner muze-shell">
+      <a class="muze-brand" href="index.html" aria-label="Muze home">
+        <span class="muze-brand-name">muze<span class="muze-brand-dot">.</span></span>
+        <span class="muze-brand-line">a solid company</span>
+      </a>
+      <button class="muze-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="muze-primary-nav" aria-label="Primary navigation">
+        <a href="now.html">Now</a>
+        <a href="work.html">Work</a>
+        <a href="writing.html">Writing</a>
+        <a href="people.html">People</a>
+        <a href="about.html">About</a>
+        <div class="muze-search-control">
+          <button class="muze-search-toggle" type="button" aria-expanded="false" aria-controls="site-search">Search</button>
+          <form id="site-search" class="muze-search-form" role="search" hidden>
+            <label class="muze-visually-hidden" for="site-search-query">Search muze.nl with Brave Search</label>
+            <input id="site-search-query" type="search" autocomplete="off" placeholder="Search muze.nl">
+            <button type="submit">Go</button>
+          </form>
+        </div>
+        <button class="muze-theme-toggle" type="button" aria-label="Switch color theme">Light / Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="muze-hero muze-shell" aria-labelledby="hero-title">
+      <div class="muze-hero-copy">
+        <h1 id="hero-title">We still love<br>the web<span class="muze-brand-dot">.</span></h1>
+        <p>We've been building on it since 1998.</p>
+        <p>Now AI is changing what we can build, how we build it, and perhaps what software is for.</p>
+        <p>We're curious about where that takes us.</p>
+        <a class="muze-text-link" href="about.html">More about Muze <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="muze-hero-image">
+        <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=1600&q=82" alt="Sunlight and shadows on a modern building wall" loading="eager" fetchpriority="high">
+        <figcaption>Photo via Unsplash</figcaption>
+      </figure>
+
+      <aside class="muze-hero-note" aria-label="Muze direction">
+        <p class="muze-hero-note-title">Same web.<br>Different possibilities.</p>
+        <div class="muze-short-rule"></div>
+        <p>People<br>Information<br>A more open future.</p>
+      </aside>
+    </section>
+
+    <section id="now" class="muze-section muze-shell" aria-labelledby="now-title">
+      <header class="muze-section-heading">
+        <h2 id="now-title">Now</h2><span class="muze-section-rule"></span><p>Ideas, experiments and current work.</p><a href="now.html">All Now <span aria-hidden="true">→</span></a>
+      </header>
+
+      <div class="muze-now-grid">
+        <article class="muze-feature-item muze-with-image">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Quiet landscape beside water" loading="lazy">
+          <div>
+            <h3>Making Solid work in the real world</h3>
+            <p>We're building and running Solid infrastructure for actual applications. Our PHP identity and storage servers currently serve more than 5,000 pods.</p>
+            <div class="muze-context-links">
+              <a href="https://pdsinterop.org/php-solid-server/"><span>server</span> PHP Solid Server <b aria-hidden="true">→</b></a>
+              <a href="https://utonomy.eu/about"><span>in use by</span> Utonomy <b aria-hidden="true">→</b></a>
+              <a href="now.html#solid-evidence"><span>evidence</span> 5,000+ pods <b aria-hidden="true">→</b></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="muze-feature-item muze-text-only">
+          <div>
+            <h3>What happens when AI meets Solid?</h3>
+            <p>We're exploring what changes when AI can work with information that remains under the control of the people it belongs to.</p>
+            <div class="muze-context-links">
+              <a href="https://forum.solidproject.org/t/introducing-jsfs-solid/10384"><span>discussion</span> Introducing JSFS-Solid <b aria-hidden="true">→</b></a>
+              <a href="https://github.com/pdsinterop/php-solid-server"><span>source</span> PHP Solid Server <b aria-hidden="true">→</b></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="muze-feature-item muze-with-image">
+          <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80" alt="Notebook and coffee on a work table" loading="lazy">
+          <div>
+            <h3>Can AI-generated software explain itself?</h3>
+            <p>We're using AI to build software while experimenting with ways to preserve why that software exists, where decisions came from, and why anyone should believe the result.</p>
+            <div class="muze-context-links">
+              <a href="now.html#spiral"><span>experiment</span> Spiral Developer <b aria-hidden="true">→</b></a>
+              <a href="https://github.com/muze-nl/.github/blob/main/maturity-policy.md"><span>context</span> Muze design principles <b aria-hidden="true">→</b></a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="muze-ai-note">Now is generated from our public activity by AI. Nobody at Muze approves it before publication. It can be wrong.</p>
+    </section>
+
+    <div class="muze-lower-grid muze-shell">
+      <section id="work" class="muze-section muze-compact-section" aria-labelledby="work-title">
+        <header class="muze-section-heading"><h2 id="work-title">Work</h2><span class="muze-section-rule"></span><p>Projects, software and collaboration.</p><a href="work.html">All work <span aria-hidden="true">→</span></a></header>
+        <div class="muze-work-list">
+          <article class="muze-list-item">
+            <div class="muze-thumb muze-thumb-photo"><img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=420&q=76" alt="Abstract map detail" loading="lazy"></div>
+            <div><h3>Solid</h3><p>Identity, storage, applications and consultancy. Open source and used in production.</p><div class="muze-context-links"><a href="https://pdsinterop.org/php-solid-server/"><span>server</span> PHP Solid Server <b aria-hidden="true">→</b></a><a href="https://github.com/pdsinterop/php-solid-server"><span>source</span> GitHub repository <b aria-hidden="true">→</b></a></div></div>
+          </article>
+          <article class="muze-list-item">
+            <div class="muze-thumb muze-thumb-photo"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=420&q=76" alt="Green leaves in daylight" loading="lazy"></div>
+            <div><h3>MEENT</h3><p>Technology for decentralised community energy.</p><div class="muze-context-links"><a href="https://waag.org/en/project/meent"><span>project</span> MEENT at Waag <b aria-hidden="true">→</b></a></div></div>
+          </article>
+          <article class="muze-list-item muze-no-thumb">
+            <div><h3>SLO curriculum</h3><p>Structured, linked and reusable public curriculum data.</p><div class="muze-context-links"><a href="https://github.com/slonl/curriculum-store"><span>source</span> curriculum-store <b aria-hidden="true">→</b></a><a href="https://opendata.slo.nl/"><span>live</span> SLO OpenData <b aria-hidden="true">→</b></a></div></div>
+          </article>
+          <article class="muze-list-item muze-no-thumb">
+            <div><h3>SimplyFlow</h3><p>An experiment in reactive web interfaces without a large framework.</p><div class="muze-context-links"><a href="https://github.com/SimplyEdit/simplyflow"><span>experiment</span> SimplyFlow source <b aria-hidden="true">→</b></a><a href="https://github.com/SimplyEdit/SimplyView"><span>related</span> SimplyView source <b aria-hidden="true">→</b></a></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="muze-section muze-compact-section" aria-labelledby="writing-title">
+        <header class="muze-section-heading"><h2 id="writing-title">Writing</h2><span class="muze-section-rule"></span><p>Articles, notes and things we're thinking about.</p><a href="writing.html">All writing <span aria-hidden="true">→</span></a></header>
+        <div class="muze-writing-list">
+          <article><h3>Introducing JSFS-Solid</h3><p>A lightweight filesystem-like client for Solid pods, and an invitation to test the approach.</p><p class="muze-byline">Auke van Slooten</p><div class="muze-context-links"><a href="https://forum.solidproject.org/t/introducing-jsfs-solid/10384"><span>source</span> Solid Community Forum <b aria-hidden="true">→</b></a></div></article>
+          <article><h3>A new authorization library</h3><p>Early feedback on Metro OIDC and a lightweight approach to Solid authentication.</p><p class="muze-byline">Auke van Slooten</p><div class="muze-context-links"><a href="https://forum.solidproject.org/t/feedback-requested-for-a-new-authorization-library/8864"><span>source</span> Solid Community Forum <b aria-hidden="true">→</b></a></div></article>
+          <article><h3>Muze design principles</h3><p>Our current preferences around simplicity, browser-native standards and replaceable software.</p><div class="muze-context-links"><a href="https://github.com/muze-nl/.github/blob/main/maturity-policy.md"><span>source</span> GitHub <b aria-hidden="true">→</b></a></div></article>
+        </div>
+      </section>
+
+      <section class="muze-section muze-compact-section muze-events" aria-labelledby="events-title">
+        <header class="muze-section-heading"><h2 id="events-title">Where can you meet us?</h2><span class="muze-section-rule"></span></header>
+        <div class="muze-event-list">
+          <article><time datetime="2026-10-01"><strong>1</strong><span>Oct</span></time><div><h3>Samen Slim + AI</h3><p>Marktconsultatie · Auke and Ben</p></div></article>
+          <article><time datetime="2026-10-01"><strong>1</strong><span>Oct</span></time><div><h3>AI Hype, Hope and Humanity</h3><p>Govert</p></div></article>
+          <article><time datetime="2026-10-22"><strong>22</strong><span>Oct</span></time><div><h3>Digitaal Vlaanderen Trefdag</h3><p>Auke and Ben</p></div></article>
+        </div>
+        <a class="muze-text-link" href="https://office.muze.nl/index.php/apps/calendar/p/oSeZand9LwkP5AHL">Public calendar <span aria-hidden="true">→</span></a>
+      </section>
+    </div>
+
+    <section id="people" class="muze-section muze-shell muze-people" aria-labelledby="people-title">
+      <header class="muze-section-heading"><h2 id="people-title">People</h2><span class="muze-section-rule"></span><p>A small group with different interests, experience and opinions.</p><a href="people.html">All 7 people <span aria-hidden="true">→</span></a></header>
+      <div class="muze-people-grid">
+        <article class="muze-person-card"><img class="muze-person-thumb" src="https://www.muze.nl/img/crew/Muze_Auke_van_Slooten.jpg" alt="Portrait of Auke van Slooten" loading="lazy"><div><h3>Auke van Slooten</h3><p>Founder · software architect</p></div></article>
+        <article class="muze-person-card"><img class="muze-person-thumb" src="https://www.muze.nl/img/crew/Muze_Yvo_Brevoort.jpg" alt="Portrait of Yvo Brevoort" loading="lazy"><div><h3>Yvo Brevoort</h3><p>Creative builder · pragmatist</p></div></article>
+        <article class="muze-person-card"><img class="muze-person-thumb" src="https://www.muze.nl/img/crew/Ben02_BW.jpg" alt="Portrait of Ben Peachey" loading="lazy"><div><h3>Ben Peachey</h3><p>Developer · mentor</p></div></article>
+        <div class="muze-people-copy"><p>We don't agree on everything. We share enough common ground about technology and the future to want to build things together.</p><p>What we do outside Muze is part of that too.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="muze-about muze-shell" aria-labelledby="about-title">
+      <h2 id="about-title" class="muze-visually-hidden">About Muze</h2>
+      <p>Muze B.V. · Eeftinksweg 15 · 7541 WE Enschede · The Netherlands · +31 (0)53 4308177 · <a href="mailto:info@muze.nl">info@muze.nl</a> · KvK 08136056</p>
+      <nav aria-label="External links"><a href="about.html">About</a><a href="https://github.com/muze-nl">GitHub</a><a href="https://www.linkedin.com/company/muze/">LinkedIn</a><a href="mailto:info@muze.nl">Contact</a></nav>
+    </section>
+  </main>
+</body>
+</html>
