@@ -68,3 +68,38 @@ searchInput?.addEventListener('keydown', (event) => {
 const updateHeader = () => header?.classList.toggle('muze-is-compact', window.scrollY > 28);
 updateHeader();
 addEventListener('scroll', updateHeader, { passive: true });
+
+
+// Elsewhere archive filters. The URL is the state, so filters remain linkable.
+const elsewhereItems = [...document.querySelectorAll('.muze-elsewhere-item')];
+if (elsewhereItems.length) {
+  const params = new URLSearchParams(location.search);
+  const topic = params.get('topic');
+  const date = params.get('date');
+  const kind = params.get('kind');
+  const status = document.querySelector('.muze-elsewhere-status');
+  const clear = document.querySelector('.muze-elsewhere-clear');
+
+  const matches = (item) => {
+    const topics = (item.dataset.topics || '').split(/\s+/);
+    return (!topic || topics.includes(topic)) && (!date || item.dataset.date === date) && (!kind || item.dataset.kind === kind);
+  };
+
+  let count = 0;
+  elsewhereItems.forEach((item) => {
+    item.hidden = !matches(item);
+    if (!item.hidden) count += 1;
+  });
+
+  const active = topic ? `topic: ${topic.replaceAll('-', ' ')}` : date ? `date: ${date}` : kind ? `kind: ${kind}` : '';
+  if (status) status.textContent = active ? `${count} item${count === 1 ? '' : 's'} · ${active}` : `${count} items`;
+  if (clear) clear.hidden = !active;
+  clear?.addEventListener('click', () => { location.href = 'elsewhere.html'; });
+
+  document.querySelectorAll('.muze-elsewhere-controls a').forEach((link) => {
+    const url = new URL(link.href, location.href);
+    if ((topic && url.searchParams.get('topic') === topic) || (date && url.searchParams.get('date') === date) || (kind && url.searchParams.get('kind') === kind)) {
+      link.setAttribute('aria-current', 'true');
+    }
+  });
+}

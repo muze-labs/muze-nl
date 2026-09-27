@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="ds-darkmode-auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Elsewhere — things other people are building, writing and thinking about that caught Muze's attention.">
+  <title>Elsewhere — Muze</title>
+  <link rel="stylesheet" href="the-ds.css"><link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<header class="muze-site-header ds-sticky-top"><div class="muze-header-inner muze-shell"><a class="muze-brand" href="index.html"><span class="muze-brand-name">muze<span class="muze-brand-dot">.</span></span><span class="muze-brand-line">a solid company</span></a><button class="muze-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button><nav id="primary-nav" class="muze-primary-nav" aria-label="Primary navigation"><a href="now.html">Now</a><a href="work.html">Work</a><a href="writing.html">Writing</a><a href="people.html">People</a><a href="about.html">About</a><div class="muze-search-control"><button class="muze-search-toggle" type="button" aria-expanded="false" aria-controls="site-search">Search</button><form id="site-search" class="muze-search-form" role="search" hidden><label class="muze-visually-hidden" for="site-search-query">Search muze.nl with Brave Search</label><input id="site-search-query" type="search" autocomplete="off" placeholder="Search muze.nl"><button type="submit">Go</button></form></div><button class="muze-theme-toggle" type="button" aria-label="Switch color theme">Light / Dark</button></nav></div></header>
+<main class="muze-content-page muze-shell">
+  <header class="muze-page-intro">
+    <div><p class="muze-eyebrow">Innovation happens elsewhere</p><h1>Elsewhere</h1></div>
+    <div class="muze-page-intro-copy"><p>Things other people are building, writing and thinking about that caught our attention. Inclusion means we think something is worth looking at. It does not necessarily mean we agree with it.</p></div>
+  </header>
+
+  <section class="muze-elsewhere-controls" aria-label="Browse Elsewhere">
+    <div><strong>By date</strong><a href="elsewhere.html">All</a><a href="elsewhere.html?date=2026-09">September 2026</a></div>
+    <div><strong>By topic</strong><a href="elsewhere.html?topic=ai-development">AI development</a><a href="elsewhere.html?topic=agents">Agents</a><a href="elsewhere.html?topic=reliability">Reliability</a><a href="elsewhere.html?topic=spec-driven-development">Spec-driven development</a><a href="elsewhere.html?topic=open-ai">Open AI</a><a href="elsewhere.html?topic=european-ai">European AI</a><a href="elsewhere.html?topic=human-agency">Human agency</a></div>
+    <div><strong>By kind</strong><a href="elsewhere.html?kind=report">Reports</a><a href="elsewhere.html?kind=project">Projects</a><a href="elsewhere.html?kind=article">Articles</a><a href="elsewhere.html?kind=collection">Collections</a></div>
+    <button class="muze-elsewhere-clear" type="button" hidden>Clear filter</button>
+  </section>
+
+  <p class="muze-elsewhere-status" aria-live="polite"></p>
+
+  <div class="muze-elsewhere-grid">
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="report" data-topics="ai-development reliability">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Ben · report</p>
+      <h2><a href="https://www.coderabbit.ai/blog/state-of-ai-vs-human-code-generation-report">AI code has characteristic failure modes</a></h2>
+      <p>CodeRabbit compared AI- and human-generated pull requests. The useful question for us is not whether AI code is simply “better” or “worse”, but whether characteristic weaknesses can be anticipated and designed around.</p>
+      <div class="muze-context-links"><a href="elsewhere.html?topic=ai-development"><span>topic</span> AI development <b>→</b></a><a href="elsewhere.html?topic=reliability"><span>topic</span> Reliability <b>→</b></a><a href="https://www.coderabbit.ai/blog/state-of-ai-vs-human-code-generation-report"><span>source</span> CodeRabbit <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="project" data-topics="agents open-ai">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Govert · project</p>
+      <h2><a href="https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents">Agent-to-agent communication without provider lock-in</a></h2>
+      <p>The Linux Foundation’s Agent2Agent project is interesting because agents from different providers need a neutral way to communicate if we want to avoid recreating provider lock-in at the agent layer.</p>
+      <div class="muze-context-links"><a href="elsewhere.html?topic=agents"><span>topic</span> Agents <b>→</b></a><a href="elsewhere.html?topic=open-ai"><span>topic</span> Open AI <b>→</b></a><a href="https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents"><span>source</span> Linux Foundation <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="collection" data-topics="ai-development spec-driven-development">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Ben · collection</p>
+      <h2>Spec-driven AI development is becoming a field</h2>
+      <p>Kiro, Microsoft’s Spec Kit, OpenSpec and Martin Fowler’s writing all approach the question of how much explicit specification AI-assisted development needs. That overlaps directly with questions we are exploring ourselves.</p>
+      <div class="muze-context-links"><a href="https://kiro.dev"><span>tool</span> Kiro <b>→</b></a><a href="https://github.com/github/spec-kit"><span>tool</span> Spec Kit <b>→</b></a><a href="https://openspec.dev"><span>tool</span> OpenSpec <b>→</b></a><a href="https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html"><span>article</span> Martin Fowler <b>→</b></a><a href="elsewhere.html?topic=spec-driven-development"><span>topic</span> Spec-driven development <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="article" data-topics="human-agency">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Auke · article</p>
+      <h2><a href="https://ariadne.space/2026/09/01/humanity-has-built-the-records.html">Humanity has built the records of FATE by accident</a></h2>
+      <p>An essay about people consulting machine systems for guidance, and what happens when those systems begin to acquire authority in everyday life. Close to questions we care about around AI interpretation and human agency.</p>
+      <div class="muze-context-links"><a href="elsewhere.html?topic=human-agency"><span>topic</span> Human agency <b>→</b></a><a href="https://ariadne.space/2026/09/01/humanity-has-built-the-records.html"><span>source</span> ariadne.space <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="project" data-topics="ai-development reliability">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Ben · project</p>
+      <h2><a href="https://github.com/louisabraham/load-bearing">The load-bearing vocabulary of Claude</a></h2>
+      <p>A project clustering language patterns in Claude-generated GitHub pull requests. Interesting as a way of looking for the linguistic fingerprints and repeated structures of AI-generated work.</p>
+      <div class="muze-context-links"><a href="https://github.com/louisabraham/load-bearing"><span>source</span> GitHub <b>→</b></a><a href="https://louisabraham.github.io/load-bearing/detector.html"><span>demo</span> Detector <b>→</b></a><a href="elsewhere.html?topic=ai-development"><span>topic</span> AI development <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="project" data-topics="agents">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Ben · project</p>
+      <h2><a href="https://github.com/cbrock84/headcount">Company in a box</a></h2>
+      <p>Headcount models a company as an organisation of installable Claude Code agents, departments and skills. We are interested because it approaches virtual organisations from almost the opposite direction to our own work.</p>
+      <div class="muze-context-links"><a href="https://github.com/cbrock84/headcount"><span>source</span> GitHub <b>→</b></a><a href="https://cbrock84.github.io/headcount/"><span>website</span> Headcount <b>→</b></a><a href="elsewhere.html?topic=agents"><span>topic</span> Agents <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="collection" data-topics="open-ai european-ai">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Auke and Ben · collection</p>
+      <h2>Open European AI infrastructure</h2>
+      <p>Apertus, GreenPT and the European Open Source LLM catalogue point at different parts of the same question: what useful European AI infrastructure can look like when openness, privacy, sovereignty and energy use matter.</p>
+      <div class="muze-context-links"><a href="https://apertus-ai.org"><span>model</span> Apertus <b>→</b></a><a href="https://greenpt.com/"><span>service</span> GreenPT <b>→</b></a><a href="https://openllm-europe.github.io/European-OpenLLM-Projects"><span>catalogue</span> European OpenLLM Projects <b>→</b></a><a href="elsewhere.html?topic=european-ai"><span>topic</span> European AI <b>→</b></a><a href="elsewhere.html?topic=open-ai"><span>topic</span> Open AI <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="report" data-topics="ai-development">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Ben · report</p>
+      <h2><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">The 2026 AI Index Report</a></h2>
+      <p>Stanford HAI’s annual overview of AI research, investment, adoption and capability. Useful background when individual announcements make it difficult to see the larger direction.</p>
+      <div class="muze-context-links"><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report"><span>source</span> Stanford HAI <b>→</b></a><a href="elsewhere.html?topic=ai-development"><span>topic</span> AI development <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="article" data-topics="ai-development">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Auke · article</p>
+      <h2><a href="https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for">Stop being skeptical about AI for development</a></h2>
+      <p>Charity Majors argues that the practical case for AI-assisted development changed sharply between 2025 and 2026. Worth reading whether or not you agree with every conclusion.</p>
+      <div class="muze-context-links"><a href="https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for"><span>source</span> The Pragmatic Engineer <b>→</b></a><a href="elsewhere.html?topic=ai-development"><span>topic</span> AI development <b>→</b></a></div>
+    </article>
+
+    <article class="muze-elsewhere-item" data-date="2026-09" data-kind="article" data-topics="ai-development">
+      <p class="muze-elsewhere-meta">Added 27 Sep 2026 · shared by Ben · article</p>
+      <h2><a href="https://archive.ph/49LRh">How people are really using AI in 2026</a></h2>
+      <p>A broad look at actual AI use, including the unexpectedly large role of fiction and storytelling. Useful because real use tends to diverge from the categories technology companies expect.</p>
+      <div class="muze-context-links"><a href="https://archive.ph/49LRh"><span>source</span> archived article <b>→</b></a><a href="elsewhere.html?topic=ai-development"><span>topic</span> AI use <b>→</b></a></div>
+    </article>
+  </div>
+
+  <p class="muze-prototype-note">For this first import, the date is when the item entered Elsewhere. The pasted Slack export does not expose a reliable message date for most links. A future Slack/API collector can use the original message timestamp.</p>
+</main>
+</body></html>
