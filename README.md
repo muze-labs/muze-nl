@@ -1,4 +1,24 @@
-# Muze homepage prototype
+# Muze websites
+
+Two static, framework-free sites in one repository. Muze hosts both itself; point each domain's document root at its folder.
+
+| Folder | Site | Purpose |
+|---|---|---|
+| `muze.nl/` | muze.nl | Positioning: Solid, Waag and SLO work, experience and simplicity, all people (one page each) |
+| `lab/` | lab.muze.nl | Now, Elsewhere, Influences, Tools and Writing |
+| `assets/` | shared | The DS, site styles and script. `muze.nl/assets` and `lab/assets` are symlinks to it; deploy by following symlinks or copy the folder in. |
+
+## Draft copy
+
+Homepage text on muze.nl that has not been approved by a person at Muze carries the `muze-draft` class and a visible "Draft copy · needs approval" label. Remove both once approved. Content still to be supplied is marked with `muze-todo` placeholders (people pages, Biebtips, Solid membership details).
+
+Search is scoped to the current site through `data-site` on the search form.
+
+---
+
+# Original prototype notes
+
+## Muze homepage prototype
 
 Static HTML/CSS/JS prototype of the emerging Muze website direction.
 

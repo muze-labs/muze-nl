@@ -53,7 +53,7 @@ searchForm?.addEventListener('submit', (event) => {
     searchInput?.focus();
     return;
   }
-  const scopedQuery = `${query} site:muze.nl`;
+  const scopedQuery = `${query} site:${searchForm.dataset.site || 'muze.nl'}`;
   window.location.href = `https://search.brave.com/search?q=${encodeURIComponent(scopedQuery)}`;
 });
 
